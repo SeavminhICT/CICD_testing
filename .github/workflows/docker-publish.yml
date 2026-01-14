@@ -1,0 +1,12 @@
+name: Demo DevSecOP
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: read
+      packages: write
